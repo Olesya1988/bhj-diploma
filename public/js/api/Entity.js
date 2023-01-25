@@ -9,6 +9,9 @@ class Entity {
    * (в зависимости от того, что наследуется от Entity)
    * */
   static list(data, callback){
+    Entity.list( data, function( err, response ) {
+      // эта функция работает аналогично callback в createRequest    
+    });
 
   }
 
