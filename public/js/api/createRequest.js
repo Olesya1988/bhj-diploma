@@ -1,27 +1,27 @@
 const createRequest = (options = {}) => {
-    const xhr = new XMLHttpRequest();
+    const xhr = new XMLHttpRequest;
     xhr.responseType = 'json';
 
-    xhr.addEventListener('readystatechange', () => {
-        if (xhr.status === 200 && xhr.readyState === xhr.DONE) {
-            callback = (err, response) => {
-                console.log(err);
-                console.log(response);
-            }
-        } else {
-            console.log(err);
-        }
-    });
+    let url = options.url;
+    let formData = new FormData();
 
-    if (method === "GET") {
-        xhr.open("GET", 'https://example.com?mail=${data.mail}&password=${data.password}');
-        xhr.responseType = 'json';
-        xhr.send();
+    if (options.method === 'GET') {
+        url += '?';
+        
+        for (let key in options.data) {
+            url += `${key}=${options.data[key]}&`
+            url = url.slice(0, -1);
+        }        
     } else {
-        const formData = new FormData;
-        formData.append('mail', 'data.mail');
-        formData.append('password', 'data.password');
-        xhr.open('POST', 'https://example.com');        
-        xhr.send(formData);
+        for (let key in options.data) {
+            formData.append(key, options.data[key]);
+        }
     }
-};
+    
+    xhr.open(options.method, url);
+    xhr.send(formData);
+
+    xhr.addEventListener('load', function() {
+        options.callback(null, xhr.response);        
+    });
+}
