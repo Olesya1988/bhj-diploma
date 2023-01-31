@@ -35,7 +35,7 @@ class User {
    * авторизованном пользователе.
    * */
   static fetch(callback) {
-    const xhr = createRequest({
+    createRequest({
       url: this.URL + '/current',
       method: 'GET',      
       data: this.current(),
@@ -62,7 +62,7 @@ class User {
    * User.setCurrent.
    * */
   static login(data, callback) {
-    const xhr = createRequest({
+    createRequest({
       url: this.URL + '/login',
       method: 'POST',      
       data,
@@ -86,7 +86,7 @@ class User {
    * User.setCurrent.
    * */
   static register(data, callback) {
-    const xhr = createRequest({
+    createRequest({
       url: this.URL + '/register',
       method: 'POST',      
       data,
@@ -108,7 +108,7 @@ class User {
    * выхода необходимо вызвать метод User.unsetCurrent
    * */
   static logout(callback) {
-    const xhr = createRequest({
+    createRequest({
       url: this.URL + '/logout',
       method: 'POST',      
       data: this.current(),

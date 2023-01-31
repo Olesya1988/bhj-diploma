@@ -18,8 +18,13 @@ const createRequest = (options = {}) => {
         }
     }
     
-    xhr.open(options.method, url);
-    xhr.send(formData);
+    try {
+        xhr.open(options.method, sendURL);
+        xhr.send(formData);       
+    }
+    catch (err) {
+        options.callback(err, null);
+    }
 
     xhr.addEventListener('load', function() {
         options.callback(null, xhr.response);        
