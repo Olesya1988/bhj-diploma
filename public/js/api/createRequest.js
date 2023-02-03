@@ -19,7 +19,7 @@ const createRequest = (options = {}) => {
     }
     
     try {
-        xhr.open(options.method, sendURL);
+        xhr.open(options.method, url);
         xhr.send(formData);       
     }
     catch (err) {

@@ -5,6 +5,18 @@
       "email": "demo@demo",
       "password": "demo",
       "id": "1"
+    },
+    {
+      "name": "Иван",
+      "email": "ivan@demo.ru",
+      "password": "1234",
+      "id": "d1k9njb7jsldmertiw"
+    },
+    {
+      "name": "Николай",
+      "email": "niko@demo.ru",
+      "password": "demo",
+      "id": "d1k9njb41cldmfmnxc"
     }
   ],
   "accounts": [
@@ -22,6 +34,11 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "Тинькофф",
+      "user_id": "d1k9njb41cldmfmnxc",
+      "id": "d1k9njbaaoldmft5uf"
     }
   ],
   "transactions": [
