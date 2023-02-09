@@ -13,8 +13,9 @@ class Modal {
    * */
   constructor(element){
     if (!element) {
-      throw new Error('Элемент не должен быть пустым!');
+      throw new Error('Пустой элемент');
     }
+
     this.element = element;
     this.registerEvents();
   }
@@ -24,13 +25,14 @@ class Modal {
    * должен закрыть текущее окно
    * (с помощью метода Modal.onClose)
    * */
-  registerEvents() {
-    let elements = this.element.querySelectorAll("[data-dismiss='modal']");
-    for (let item of elements) {
-      item.onclick = () => {
-        this.onClose();
-      }
-    }
+  registerEvents() { 
+    const elements = Array.from(this.element.querySelectorAll('[data-dismiss="modal"]'));
+    
+    elements.forEach(el => {
+      el.addEventListener('click', (e) => {
+        this.onClose(e);
+      });
+    });
   }
 
   /**

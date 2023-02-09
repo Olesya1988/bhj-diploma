@@ -56,16 +56,6 @@
       "id": "d1k9njb2k8ldpgo8g4"
     },
     {
-      "name": "Восточный",
-      "user_id": "d1k9njb41cldmfmnxc",
-      "id": "d1k9njb4v0ldpgtvuc"
-    },
-    {
-      "name": "Сбер",
-      "user_id": "d1k9njb41cldmfmnxc",
-      "id": "d1k9njb94sldpgz3y5"
-    },
-    {
       "name": "Другой",
       "user_id": "d1k9njb41cldmfmnxc",
       "id": "d1k9njb9o4ldph1cdd"
@@ -213,31 +203,49 @@
       "user_id": "1"
     },
     {
-      "id": "d1k9njbzcldr5953e",
+      "id": "d1k9njb14wldwitijq",
       "type": "income",
-      "name": "Зарплата",
-      "sum": 50000,
-      "account_id": "d1k9njbaaoldmft5uf",
+      "name": "Нашел в зимней куртке",
+      "sum": 5000,
+      "account_id": "d1k9njb5t8ldr3g03o",
       "user_id": "d1k9njb41cldmfmnxc",
-      "created_at": "2023-02-05T08:50:27.721Z"
+      "created_at": "2023-02-09T03:09:04.165Z"
     },
     {
-      "id": "d1k9njb60kldr597t6",
+      "id": "d1k9njb7ewldwj5efc",
       "type": "income",
-      "name": "Зарплата",
-      "sum": 50000,
-      "account_id": "d1k9njbaaoldmft5uf",
+      "name": "Репетиторство",
+      "sum": 5000,
+      "account_id": "d1k9njb5wsldpgh0rx",
       "user_id": "d1k9njb41cldmfmnxc",
-      "created_at": "2023-02-05T08:50:31.241Z"
+      "created_at": "2023-02-09T03:18:18.695Z"
     },
     {
-      "id": "d1k9njb5ywldrau2li",
+      "id": "d1k9njb4r4ldwjbfiq",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 15000,
+      "account_id": "d1k9njb1d4ldpglj2y",
+      "user_id": "d1k9njb41cldmfmnxc",
+      "created_at": "2023-02-09T03:23:00.049Z"
+    },
+    {
+      "id": "d1k9njb7ukldwjvodp",
       "type": "income",
       "name": "Аванс",
+      "sum": 20000,
+      "account_id": "d1k9njbaaoldmft5uf",
+      "user_id": "d1k9njb41cldmfmnxc",
+      "created_at": "2023-02-09T03:38:44.652Z"
+    },
+    {
+      "id": "d1k9njba1kldwkc598",
+      "type": "expense",
+      "name": "Продукты",
       "sum": 5000,
       "account_id": "d1k9njbaaoldmft5uf",
       "user_id": "d1k9njb41cldmfmnxc",
-      "created_at": "2023-02-05T11:26:42.341Z"
+      "created_at": "2023-02-09T03:51:33.019Z"
     }
   ]
 }

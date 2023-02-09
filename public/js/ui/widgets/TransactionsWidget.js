@@ -13,7 +13,7 @@ class TransactionsWidget {
    * */
   constructor( element ) {
     if (!element) {
-      throw new Error('Элемент не должен быть пустым!');
+      throw new Error('Пустой элемент');
     }
 
     this.element = element;

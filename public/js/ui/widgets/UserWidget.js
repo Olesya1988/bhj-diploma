@@ -13,8 +13,9 @@ class UserWidget {
    * */
   constructor(element) {
     this.element = element;
+    
     if (!element) {
-      throw new Error('Пустое поле');
+      throw new Error('Пустой элемент');
     }    
   }
 
@@ -27,6 +28,7 @@ class UserWidget {
    * */
   update() {
     let user = User.current();
+
     if (user.name) {
       const userName = document.querySelector('.user-name')
       userName.textContent = user.name;
