@@ -34,19 +34,15 @@ class TransactionsPage {
    * */
   registerEvents() {
     this.element.addEventListener('click', (event) => {
-      if (event.target.classList.contains('remove-account') || event.target.closest('.remove-account')) {
+      if (event.target.closest('.remove-account')) {
         this.removeAccount();
       }
 
       let parent = event.target;
-
-      if (parent.closest('.transaction__remove')) {
-        parent = parent.closest('.transaction__remove');
-      }
-
+      
       if (parent.classList.contains('transaction__remove')) {
         this.removeTransaction(parent.dataset.id);
-      } 
+      }
     })
   }
 
@@ -125,7 +121,7 @@ class TransactionsPage {
    * Устанавливает заголовок в элемент .content-title
    * */
   renderTitle(name) {
-    const contentTitle = document.querySelector('.content-title');
+    const contentTitle = this.element.querySelector('.content-title');
     contentTitle.textContent = name;
   }
 
@@ -182,6 +178,7 @@ class TransactionsPage {
    * */
   renderTransactions(data) { 
     const content = this.element.querySelector('.content');
+    
     content.innerHTML = '';
     
     data.forEach(item => {

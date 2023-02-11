@@ -17,6 +17,24 @@
       "email": "niko@demo.ru",
       "password": "demo",
       "id": "d1k9njb41cldmfmnxc"
+    },
+    {
+      "name": "Ольга",
+      "email": "olga@demo.ru",
+      "password": "12345",
+      "id": "d1k9njb53cldws6agl"
+    },
+    {
+      "name": "Olga",
+      "email": "olga@test.ru",
+      "password": "1234",
+      "id": "d1k9njb7kkldwsamjk"
+    },
+    {
+      "name": "Миша",
+      "email": "misha@mail.ru",
+      "password": "11235813",
+      "id": "d1k9njb2u4ldwsk65s"
     }
   ],
   "accounts": [
@@ -51,19 +69,14 @@
       "id": "d1k9njb1d4ldpglj2y"
     },
     {
-      "name": "ВТБ",
-      "user_id": "d1k9njb41cldmfmnxc",
-      "id": "d1k9njb2k8ldpgo8g4"
-    },
-    {
-      "name": "Другой",
-      "user_id": "d1k9njb41cldmfmnxc",
-      "id": "d1k9njb9o4ldph1cdd"
-    },
-    {
       "name": "Наличные",
       "user_id": "d1k9njb41cldmfmnxc",
       "id": "d1k9njb5t8ldr3g03o"
+    },
+    {
+      "name": "ВТБ",
+      "user_id": "d1k9njb7kkldwsamjk",
+      "id": "d1k9njb50oldwsd3hu"
     }
   ],
   "transactions": [
@@ -203,15 +216,6 @@
       "user_id": "1"
     },
     {
-      "id": "d1k9njb14wldwitijq",
-      "type": "income",
-      "name": "Нашел в зимней куртке",
-      "sum": 5000,
-      "account_id": "d1k9njb5t8ldr3g03o",
-      "user_id": "d1k9njb41cldmfmnxc",
-      "created_at": "2023-02-09T03:09:04.165Z"
-    },
-    {
       "id": "d1k9njb7ewldwj5efc",
       "type": "income",
       "name": "Репетиторство",
@@ -221,31 +225,40 @@
       "created_at": "2023-02-09T03:18:18.695Z"
     },
     {
-      "id": "d1k9njb4r4ldwjbfiq",
+      "id": "d1k9njb5hgldwselx4",
       "type": "income",
       "name": "ЗП",
-      "sum": 15000,
-      "account_id": "d1k9njb1d4ldpglj2y",
-      "user_id": "d1k9njb41cldmfmnxc",
-      "created_at": "2023-02-09T03:23:00.049Z"
+      "sum": 5000,
+      "account_id": "d1k9njb50oldwsd3hu",
+      "user_id": "d1k9njb7kkldwsamjk",
+      "created_at": "2023-02-09T07:37:24.855Z"
     },
     {
-      "id": "d1k9njb7ukldwjvodp",
-      "type": "income",
-      "name": "Аванс",
-      "sum": 20000,
-      "account_id": "d1k9njbaaoldmft5uf",
-      "user_id": "d1k9njb41cldmfmnxc",
-      "created_at": "2023-02-09T03:38:44.652Z"
-    },
-    {
-      "id": "d1k9njba1kldwkc598",
+      "id": "d1k9njb8foldwseult",
       "type": "expense",
       "name": "Продукты",
+      "sum": 2000,
+      "account_id": "d1k9njb50oldwsd3hu",
+      "user_id": "d1k9njb7kkldwsamjk",
+      "created_at": "2023-02-09T07:37:36.112Z"
+    },
+    {
+      "id": "d1k9njb6rsldzklwkz",
+      "type": "income",
+      "name": "ЗП",
+      "sum": 10000,
+      "account_id": "d1k9njbaaoldmft5uf",
+      "user_id": "d1k9njb41cldmfmnxc",
+      "created_at": "2023-02-11T06:22:26.866Z"
+    },
+    {
+      "id": "d1k9njb4cwldzkoucu",
+      "type": "income",
+      "name": "Аванс",
       "sum": 5000,
       "account_id": "d1k9njbaaoldmft5uf",
       "user_id": "d1k9njb41cldmfmnxc",
-      "created_at": "2023-02-09T03:51:33.019Z"
+      "created_at": "2023-02-11T06:24:43.949Z"
     }
   ]
 }

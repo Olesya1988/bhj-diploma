@@ -73,7 +73,7 @@ class AccountsWidget {
    * в боковой колонке
    * */
   clear() {
-    let accounts = Array.from(document.querySelectorAll('.account'));
+    let accounts = Array.from(this.element.querySelectorAll('.account'));
 
     for (let i = 0; i < accounts.length; i++) {      
       accounts[i].remove();      
@@ -87,14 +87,14 @@ class AccountsWidget {
    * счёта класс .active.
    * Вызывает App.showPage( 'transactions', { account_id: id_счёта });
    * */
-  onSelectAccount( element ) {    
-    const activeAccount = document.querySelector('.active');
+  onSelectAccount(element) {    
+    const activeAccount = this.element.querySelector('.active');
     
     if (activeAccount) {
       activeAccount.classList.remove('active');
     }
 
-    this.element.classList.add('active');
+    element.classList.add('active');
     
     App.showPage('transactions', {account_id: element.dataset['id']});    
   }
